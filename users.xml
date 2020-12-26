@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.7.7
+- https://www.phpmyadmin.net
+-
+- Хост: 127.0.0.1:3306
+- Время создания: Дек 26 2020 г., 03:59
+- Версия сервера: 5.6.38
+- Версия PHP: 5.5.38
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="spotify" collation="utf8_unicode_ci" charset="utf8">
+            <pma:table name="users">
+                CREATE TABLE `users` (
+                  `id` mediumint(9) NOT NULL AUTO_INCREMENT,
+                  `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+                  `password` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+                  `salt` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+                  PRIMARY KEY (`id`),
+                  UNIQUE KEY `username` (`username`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - База данных: 'spotify'
+    -->
+    <database name="spotify">
+        <!-- Таблица users -->
+        <table name="users">
+            <column name="id">1</column>
+            <column name="username">zutnik87@gmail.com</column>
+            <column name="password">e1b2995084e2ffba6e5c90c9b872a0c1</column>
+            <column name="salt">5fe29c9a9ccf6</column>
+        </table>
+        <table name="users">
+            <column name="id">2</column>
+            <column name="username">zutnik87@gmail.com1</column>
+            <column name="password">62751d7c2b5f9e678d9cb2b20111f040</column>
+            <column name="salt">5fe29ec495597</column>
+        </table>
+        <table name="users">
+            <column name="id">3</column>
+            <column name="username">zutnik87@gmail.com3</column>
+            <column name="password">b3dcaf5de906aa56a927cdcec44e40bb</column>
+            <column name="salt">5fe30f57b8d93</column>
+        </table>
+    </database>
+</pma_xml_export>
