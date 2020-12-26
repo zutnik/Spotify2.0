@@ -1,0 +1,30 @@
+===База данных spotify
+
+== Структура таблицы media
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int(11)|Нет|
+|song|varchar(32)|Нет|
+|time|time|Нет|
+|author|varchar(11)|Нет|
+|style|varchar(32)|Нет|
+|country|varchar(11)|Нет|
+== Дамп данных таблицы media
+
+|1|I need some sleep|00:04:02| |jazz| 
+|2|Come and get|00:03:00| |pop| 
+|3|ooooh myyyy|00:03:25| |pop| 
+|4|Slipp|18:06:00|Author|jazz|australia
+|19|Slipp111|19:44:00|Author4|jazz|usa
+|20|Slipp111|12:45:00|Author4|jazz|usa
+|21|Соль земли|03:24:00|OVlad|pop|australia
+|22|Slipp|05:19:00|Author4|jazz|canada
+|23|Slipp|05:19:00|Author4|jazz|canada
+|24|Slipp|05:19:00|Author4|jazz|canada
+|25|Slipp|05:19:00|Author4|jazz|canada
+|26|Slipp|05:19:00|Author4|jazz|canada
+|27|Slipp|05:19:00|Author4|jazz|canada
+|28|Slipp|05:19:00|Author4|jazz|canada
+|29|Slipp|05:19:00|Author4|jazz|canada
