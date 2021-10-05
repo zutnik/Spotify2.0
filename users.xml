@@ -10,7 +10,7 @@
 - Версия PHP: 5.5.38
 -->
 
-<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+<pma_xml_export version="1.1" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
     <!--
     - Structure schemas
     -->
