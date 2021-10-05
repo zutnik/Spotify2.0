@@ -47,7 +47,7 @@
             <column name="salt">5fe29ec495597</column>
         </table>
         <table name="users">
-            <column name="id">3</column>
+            <column name="id">4</column>
             <column name="username">zutnik87@gmail.com3</column>
             <column name="password">b3dcaf5de906aa56a927cdcec44e40bb</column>
             <column name="salt">5fe30f57b8d93</column>
