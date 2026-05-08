@@ -338,3 +338,9 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+
+# Database dumps & sensitive data
+*.xml
+*.sql
+users.xml
+media.txt
