@@ -16,7 +16,7 @@ A music streaming web application inspired by Spotify — built with PHP and MyS
 
 | Layer    | Technology            |
 |----------|-----------------------|
-| Backend  | PHP 7                 |
+| Backend  | PHP                   |
 | Database | MySQL                 |
 | Frontend | HTML5, CSS3, Bootstrap 4 |
 | AJAX     | jQuery / jQuery UI    |

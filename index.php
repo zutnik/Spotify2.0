@@ -1,8 +1,8 @@
 <?php 
 
-session_start ();
-echo $_SESSION ['name'];
-echo $_SESSION ['email'];
+session_start();
+echo htmlspecialchars($_SESSION['name'] ?? '', ENT_QUOTES, 'UTF-8');
+echo htmlspecialchars($_SESSION['email'] ?? '', ENT_QUOTES, 'UTF-8');
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -22,7 +22,7 @@ echo $_SESSION ['email'];
       <a class="p-2 text-dark" href="index.php">Основна сторінка</a>
       <a class="p-2 text-dark" href="">Каталог композицій</a>
       <a class="p-2 text-dark" href="txt.php">Служба підтримки</a>
-      <a class="p-2 text-dark" href="Log.php">Особистий кабінет</a>
+      <a class="p-2 text-dark" href="log.php">Особистий кабінет</a>
       <a class="p-2 text-dark" href="register.php">Регестрація</a>
     </nav>
 
@@ -219,16 +219,16 @@ echo $_SESSION ['email'];
       require_once __DIR__ . '/config.php';
       $mysql = db_connect();
       $song = mysqli_query($mysql, "SELECT * FROM media");
-      $song = mysqli_fetch_all($song);
-      foreach ($song as $song) {
+      $songs = mysqli_fetch_all($song);
+      foreach ($songs as $track) {
       ?>
 
         <tr>
-          <td><?= $song[1] ?></td>
-          <td><?= $song[2] ?></td>
-          <td><?= $song[3] ?></td>
-          <td><?= $song[4] ?></td>
-          <td><?= $song[5] ?></td>
+          <td><?= htmlspecialchars($track[1], ENT_QUOTES, 'UTF-8') ?></td>
+          <td><?= htmlspecialchars($track[2], ENT_QUOTES, 'UTF-8') ?></td>
+          <td><?= htmlspecialchars($track[3], ENT_QUOTES, 'UTF-8') ?></td>
+          <td><?= htmlspecialchars($track[4], ENT_QUOTES, 'UTF-8') ?></td>
+          <td><?= htmlspecialchars($track[5], ENT_QUOTES, 'UTF-8') ?></td>
         </tr>
 
       <?php
