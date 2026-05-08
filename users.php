@@ -4,7 +4,7 @@
  * Подключаем файл для получения соединения к базе данных (PhpMyAdmin, MySQL)
  */
 
-require_once 'Bd\conect.php';
+require_once __DIR__ . '/config.php';
 
 ?>
 
@@ -30,10 +30,7 @@ require_once 'Bd\conect.php';
         </tr>
 
         <?php
-            $mysql = new mysqli('127.0.0.1', 'mysql', 'mysql','spotify');
-            if (!$mysql) {
-                echo'eroor';
-            }
+            $mysql = db_connect();
             /*
              * Делаем выборку всех строк из таблицы "usars"
              */

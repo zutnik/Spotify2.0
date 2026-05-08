@@ -42,9 +42,11 @@ A music streaming web application inspired by Spotify — built with PHP and MyS
 
 1. Clone the repo into your web server root (e.g. `htdocs/` or `www/`)
 2. Import the database schema from the `Bd/` folder into MySQL
-3. Set your DB credentials in the connection config
+3. Copy `config.php`, fill in your DB credentials — this file is gitignored
 4. Open `http://localhost/Spotify2.0` in your browser
 5. Register an account and start adding tracks
+
+> **Note:** This is a university coursework project (KPI, 2021–2022), built to learn PHP/MySQL fundamentals. Not intended for production use.
 
 ## Contact
 

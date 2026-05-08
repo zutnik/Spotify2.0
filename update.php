@@ -4,10 +4,8 @@
      * Подключаем файл для получения соединения к базе данных (PhpMyAdmin, MySQL)
      */
 
-    $mysql = new mysqli('127.0.0.1', 'mysql', 'mysql','spotify');
-    if (!$mysql) {
-        echo'eroor';
-    }
+    require_once __DIR__ . '/config.php';
+    $mysql = db_connect();
 
     /*
      * Получаем ID продукта из адресной строки - /usar.php?id=1

@@ -3,10 +3,6 @@
 include './classes/Auth.class.php';
 include './classes/AjaxRequest.class.php';
 
-if (!empty($_COOKIE['sid'])) {
-    // check session id in cookies
-    session_id($_COOKIE['sid']);
-}
 session_start();
 
 class AuthorizationAjaxRequest extends AjaxRequest
@@ -121,18 +117,7 @@ class AuthorizationAjaxRequest extends AjaxRequest
         $user->authorize($username, $password1);
 
         $this->message = sprintf("Hello, %s! Thank you for registration.", $username);
-        
-        switch ($_POST['country1']) {
-            case "1":
-                $this->setResponse("redirect", "/users.php");
-            case "2":
-                $this->setResponse("redirect", "/about.php");
-            case "3":
-                $this->setResponse("redirect", "/");
-                
-        }
-        
-
+        $this->setResponse("redirect", "/");
         $this->status = "ok";
     }
 }

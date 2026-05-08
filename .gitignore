@@ -344,3 +344,6 @@ healthchecksdb
 *.sql
 users.xml
 media.txt
+
+# Local config with DB credentials (copy config.php and fill in your values)
+config.local.php

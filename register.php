@@ -1,9 +1,5 @@
 <?php
     
-if (!empty($_COOKIE['sid'])) {
-    // check session id in cookies
-    session_id($_COOKIE['sid']);
-}
 session_start();
 require_once './classes/Auth.class.php';
 
@@ -121,14 +117,6 @@ input[type=submit]:hover {
 
   <h2 class="form-signin-heading">Please sign up</h2>
   <input name="username" type="text" class="input-block-level" placeholder="Username" autofocus>
-  <div class="">
-        <select  name="country1">
-          <option value="1">AdminUser</option>
-          <option value="2">Company</option>
-          <option value="3">AddSong</option>
-        </select>
-      </div>
-      <br>
   <input name="password1" type="password" class="input-block-level" placeholder="Password">
   <input name="password2" type="password" class="input-block-level" placeholder="Confirm password">
   <input type="hidden" name="act" value="register">

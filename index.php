@@ -216,10 +216,8 @@ echo $_SESSION ['email'];
         <td>country</td>
       </tr>
       <?php
-      $mysql = new mysqli('127.0.0.1', 'mysql', 'mysql', 'spotify');
-      if (!$mysql) {
-        echo 'eroor';
-      }
+      require_once __DIR__ . '/config.php';
+      $mysql = db_connect();
       $song = mysqli_query($mysql, "SELECT * FROM media");
       $song = mysqli_fetch_all($song);
       foreach ($song as $song) {
