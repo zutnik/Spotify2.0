@@ -45,3 +45,7 @@ A music streaming web application inspired by Spotify — built with PHP and MyS
 3. Set your DB credentials in the connection config
 4. Open `http://localhost/Spotify2.0` in your browser
 5. Register an account and start adding tracks
+
+## Contact
+
+📫 [zhytnyk.bogdan@gmail.com](mailto:zhytnyk.bogdan@gmail.com)
